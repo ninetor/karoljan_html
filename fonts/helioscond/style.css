@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'Helios Cond';
+	src: url('fonts/HeliosCondRegular.eot');
+	src: url('fonts/HeliosCondRegular.eot#iefix') format('embedded-opentype'),
+		 url('fonts/HeliosCondRegular.ttf') format('truetype'),
+		 url('fonts/HeliosCondRegular.woff') format('woff');
+
+	font-weight: normal;
+	font-style: normal;
+}

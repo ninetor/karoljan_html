@@ -1,0 +1,28 @@
+include ./_components.jade
+
+doctype html
+html
+	+head ('ПIВА З АДМЕТНЫМ ХАРАКТАРАМ')
+
+	body
+		.page.is-error
+			+socials
+
+			.logotype
+
+			.page--title Такой старонкі няма
+			.page--text Старонка, якую вы шукаеце, не знойдзена. Магчыма, яна была выдалена, змяніўся яе адрас або старонка часова недаступна.
+			.page--btns #[a(href="in.html") Blonde]#[a(href="in.html") Dunkel] 
+
+			.hidden-xs.hidden-sm
+				.left-side
+					.left-side--photo
+					.left-side--gradient
+
+				.right-side
+					.right-side--photo
+					.right-side--gradient
+
+			.warning: .warning--in
+
+		+ga
