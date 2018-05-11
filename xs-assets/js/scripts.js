@@ -56,13 +56,13 @@ $(document).ready(function () {
 	function switchIntroTitle(){
 		var newActive=$(".intro-slider-unit.active");
 		if(newActive.hasClass("blonde")){
-			$(".intro-slider-title").html("blonde");
+			$(".intro-slider-title").html("Karol Jan Blond");
 			$(".new-tag").removeClass("active");
 		} else if(newActive.hasClass("ruby")){
-			$(".intro-slider-title").html("ruby");
+			$(".intro-slider-title").html("Karol Jan Ruby");
 			$(".new-tag").addClass("active");
 		} else if(newActive.hasClass("dunkel")){
-			$(".intro-slider-title").html("dunkel");
+			$(".intro-slider-title").html("Karol Jan Dunkel");
 			$(".new-tag").removeClass("active");
 		}
 	}
