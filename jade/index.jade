@@ -1,21 +1,15 @@
 include ./_components.jade
 
 doctype html
-html
+html(lang="be")
 	+head ('ПIВА З АДМЕТНЫМ ХАРАКТАРАМ')
 
 	body
 		.page.is-age
-			+socials
 
-			.logotype
-
-			.page--title Вам больш за 18&nbsp;год?
-			.page--btns.page--btns_age #[a(href="in.html") Так]#[a(href="http://google.by/") Не]
+			.page--title Вам больш за&nbsp;18&nbsp;год?
+			.page--btns.page--btns_age #[a(href="in.html") так]#[a(href="http://google.by/") не]
 
 			.hidden-xs.hidden-sm
-				
-
-			.warning: .warning--in
 
 		+ga

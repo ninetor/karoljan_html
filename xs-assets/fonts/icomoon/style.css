@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?m0n4g8');
-  src:  url('fonts/icomoon.eot?m0n4g8#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?m0n4g8') format('truetype'),
-    url('fonts/icomoon.woff?m0n4g8') format('woff'),
-    url('fonts/icomoon.svg?m0n4g8#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?wcyyjs');
+  src:  url('fonts/icomoon.eot?wcyyjs#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?wcyyjs') format('truetype'),
+    url('fonts/icomoon.woff?wcyyjs') format('woff'),
+    url('fonts/icomoon.svg?wcyyjs#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,12 +26,15 @@
 
 .icon-bigarrow:before {
   content: "\e905";
+  color: #eebe63;
 }
 .icon-right:before {
   content: "\e903";
+  color: #eebe63;
 }
 .icon-left:before {
   content: "\e904";
+  color: #eebe63;
 }
 .icon-vkontakte:before {
   content: "\e900";
@@ -42,4 +45,6 @@
 .icon-facebook:before {
   content: "\e902";
 }
-
+.icon-instagram:before {
+  content: "\ea92";
+}

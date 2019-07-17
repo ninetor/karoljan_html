@@ -2,52 +2,60 @@ include ./_components.jade
 
 mixin content (typing)
 	.content
+		if (typing=="hello-honey")
+			.content--logo
+				img(src="img/kj-logo_2x.png", alt="")
+			.content--title karol jan#[br]hello honey!
+			.content--text Karol Jan Hello Honey! – цёмна-бурштынавае#[br]мядовае пiва з багатым смакам i лёгкай гарчынкай.
+			.content--counters
+				.content--counter Шчыльнасьць#[span 11,0%]
+				.content--counter Алкаголь#[span 3,8%]
+				.content--counter Горыч#[span 10 #[span IBU]]
+
+			.content--desc
+				p Спецыяльнае піва мае насычаны цёмна-бурштынавы колер. Крыху востры, кісла-салодкі смак утрымлівае мядовыя ноткі і лёгкую гарчынку ў посмаку. Асаблівы лагер перадае яркі водар карамелі. Цела піва лёгкае, пена прыемнага крэмавага адцення.
+				p Зварана з дадаваннем араматызатара мядовага.
+
 		if (typing == 'blonde')
-			.content--title Karol Jan Blonde
-			.content--text Karol Jan Blonde&nbsp;&mdash; гэта светлае піва ў бельгійскім стылі, мяккае ды&nbsp;шчыльнае. Валодае прыгожым <nobr>ясна-залацістым</nobr> колерам. Цела высакашчыльнае ды&nbsp;круглявае.
+			.content--logo
+				img(src="img/kj-logo-red_2x.png", alt="")
+			.content--title Karol Jan#[br]blonde
+			.content--text Karol Jan Blonde – светлае піва ў бельгійскім стылі з&nbsp;тонкім соладавым водарам, лёгкай прыемнай гарчынкай і саладкаватым посмакам.
 			.content--counters
 				.content--counter Шчыльнасьць#[span 14,0%]
 				.content--counter Алкаголь#[span 5,9%]
-				.content--counter Горыч#[span 16 IBU]
+				.content--counter Горыч#[span 16 #[span IBU]]
 			.content--desc
-				p Смак піва сухі і насычаны, з&nbsp;ноткамі вострых прыправаў. У&nbsp;смаку прысутнічае мяккая прыемная хмелевая горыч і інтэнсіўнае саладкаватае паслягусце. Пераважаюць пяшчотны соладавы і <nobr>кветкава-фруктовы</nobr> водары. Гатунак валодае павышанай пенастойкасцю: пена дробназярністая, шапка белага колеру, высокая ды&nbsp;шчыльная.
-				p Вырабляецца з&nbsp;яснага соладу і некалькіх гатункаў нямецкага хмелю: горкага гатунку Magnum і араматнага Hallertau.
-		if (typing== "dunkel")
-			.content--title Karol Jan Dunkel
-			.content--text Karol Jan Dunkel&nbsp;&mdash; цёмнае традыцыйнае нямецкае піва з&nbsp;насычаным соладавым смакам, ледзьве заўважальнай горыччу, сухім круглявым канчаткам.
-			.content--counters
-				.content--counter Шчыльнасьць#[span 12,0%]
-				.content--counter Алкаголь#[span 4,5%]
-				.content--counter Горыч#[span 16 IBU]
-			.content--desc
-				p Валодае глыбокім <nobr>ясна-каштанавым</nobr> колерам з&nbsp;адлівам медзі. У&nbsp;поўным смаку гэтага піва прысутнічаюць водары падсмажанага хлеба з&nbsp;маслам, якія плаўна пераходзяць у&nbsp;ноткі карамелі ды&nbsp;завяршаюцца тонкім водарам інжыру. Цела піва лёгкае, пена прыемнага крэмавага адцення.
-				p Вырабляецца з&nbsp;дадаваннем карамельнага соладу Ebenholz з&nbsp;самага сэрца Баварыі, які надае піву шыкоўны насычаны колер.
+				p Смак піва сухі і насычаны, з ноткамі вострых прыпраў. У смаку прысутнічае мяккая хмелевая горыч і саладкаваты посмак. Пераважаюць соладавы і кветкава-фруктовы водары. Пена дробназярністая, шапка белага колеру, высокая ды шчыльная.
+				p Вырабляецца са светлага соладу і некалькіх гатункаў нямецкага хмелю.
 
-		if (typing=="ruby")
-			.content--title Karol Jan Ruby
-			.content--text Karol Jan Ruby&nbsp;&mdash; фруктовае піва з лёгкім збалансаваным смакам і водарам спелай вішні
+		if (typing== "ruby")
+			.content--logo
+				img(src="img/kj-logo_2x.png", alt="")
+			.content--title karol jan#[br]ruby
+			.content--text Karol Jan Ruby – фруктовае піва з лёгкім збалансаваным смакам і водарам спелай вішні.
 			.content--counters
 				.content--counter Шчыльнасьць#[span 13,0%]
-				.content--counter Алк. не менш за#[span 4,5%]
-				.content--counter Горыч#[span 16 IBU]
-
+				.content--counter Алкаголь#[span 4,6%]
+				.content--counter Горыч#[span 16 #[span IBU]]
 			.content--desc
-				p Мае сочны рубінавы колер. Вядучай ноткай водару з’яўляецца вішня з ледзь адчувальным адценнем міндаля і фруктаў. Адрозніваецца прыемным абвалакальным смакам з яркім зрушэннем у бок вішні. Посмак даўкі і вязкі, з ледзь адчувальнай горыччу. Пена стойкая, дробназярністая, з ружовым адлівам.
-				p Вырабляецца з дадаваннем натуральнага соку вішні і соладавага экстракту Ruby. 
-		if (typing=="ruby-tagged")
+				p Мае сочны рубінавы колер. Вядучай ноткай водару з’яўляецца вішня з ледзь адчувальным адценнем міндаля і фруктаў. Посмак даўкі і вязкі, з ледзь адчувальнай горыччу. Пена стойкая, дробназярністая, з ружовым адлівам.
+				p Вырабляецца з дадаваннем натуральнага соку вішні і соладавага экстракту Ruby.
+
+		if (typing=="hello-honey-tagged")
 			.content-tag Сіла вішнёвага прыцягнення
 			.content--title Karol Jan Ruby
 			.content--text Karol Jan Ruby&nbsp;&mdash; фруктовае піва з лёгкім збалансаваным смакам і водарам спелай вішні
 			.content--counters
 				.content--counter Шчыльнасьць#[span 13,0%]
 				.content--counter Алкаголь#[span 4,5%]
-				.content--counter Горыч#[span 16 #[span IBU] ]
+				.content--counter Горыч#[span 16 #[span IBU]]
 
 			.content--desc
 				p Мае сочны рубінавы колер. Вядучай ноткай водару з’яўляецца вішня з ледзь адчувальным адценнем міндаля і фруктаў. Адрозніваецца прыемным абвалакальным смакам з яркім зрушэннем у бок вішні. Посмак даўкі і вязкі, з ледзь адчувальнай горыччу. Пена стойкая, дробназярністая, з ружовым адлівам.
 				p Вырабляецца з дадаваннем натуральнага соку вішні і соладавага экстракту Ruby. 
 doctype html
-html
+html(lang="be")
 	+head ('ПIВА З АДМЕТНЫМ ХАРАКТАРАМ')
 
 	body
@@ -55,126 +63,99 @@ html
 			+socials
 			.greeting-popup.active
 				.greeting-popup-body
-					.greeting-popup-title
-						img(src="img/popup-logo.png" alt="")
-					.greeting-popup-subtitle Пiва з адметным характарам
-					.greeting-popup-text Karol Jan — новая прэміяльная лінейка піва, зваранага па традыцыйных еўрапейскіх рэцэптах з выкарыстаннем асаблівых гатункаў хмелю. Натхненне гісторыяй жыцця і дзейнасці Ка́раля Яна Чапскага дапамагло нам стварыць асаблівае піва з адметным характарам.
-					.greeting-popup-button Далей
+					.greeting-popup-title Натхненне#[br]асаблівых&nbsp;смакаў!
+					.greeting-popup-text Karol Jan – лінейка асаблівых гатункаў піва, натхнёная незвычайнымі падзеямі жыцця мінскага дзеяча Караля Яна Чапскага, мэра горада і ўладальніка піваварнага завода «Багемія», на сённяшні дзень «Аліварыя».
+					.greeting-popup-button далей
 
 			.intro-mobile.visible-xs.visible-sm
-				.logotype
 
-				.page--title ПIВА З АДМЕТНЫМ#[br]ХАРАКТАРАМ
-				.page--text Аддаючы належнае аднаму са&nbsp;сваіх заснавальнікаў, &laquo;Аліварыя&raquo; запусціла ў Беларусі прэміяльную лінейку еўрапейскага піва. Нашы півавары, натхніўшыся асобай заснавальніка бровара і лепшым еўрапейскім півам, зварылі два новыя гатункі.
-				.page--btns.hidden-xs.hidden-sm #[a(href="#").js-toright Blonde]#[a(href="#").js-toleft Dunkel]
-				.page--btns.visible-xs.visible-sm #[a(href="#RubyBox").js-slide Ruby]#[a(href="#BlondeBox").js-slide Blonde]#[a(href="#DunkelBox").js-slide Dunkel]
-			.page-wrap.hidden-xs.hidden-sm.page-wrap_ruby
-				.page-wrap-logo
-					img(src="img/logotype.svg" alt="")
-				.page-unit.active.page-unit_ruby
-					.page-unit-newTag
-						img(src="img/new-tag.png" alt="")
-					.left-side--gradient
-					.page-unit-shadow
-					.ruby-side--photo.page-unit-photo
-					.page-unit-glass
-						img(src="img/ruby-glass.png" alt="")
-						.info.is-l2
-							.info--circle
-							.info--box.is-fw
-								.info--box--close
-								.info--text
-									p Падавайце Karol Jan Ruby у куфлі «шаліс» пры тэмпературы 8–10°С. Фруктовы гатунак выдатна спалучаецца з усёй разнастайнасцю сыроў: ад вострых і рэзкіх да мяккіх сметанковых. Цудоўна падыдуць стравы з рыбы і морапрадуктаў, а таксама салаты з агародніны. Па-новаму раскрыюць смак лёгкія фруктовыя дэсерты на аснове вішні.
-									img(src="img/popup_ruby.jpg" alt="")
 
-					.page-unit-bottle
-						img(src="img/ruby-beer.png" alt="")
+			.page-wrap.hidden-xs.hidden-sm.page-wrap_hello-honey
+				.page-unit.active.page-unit_hello-honey
+					.page-unit-gb
+						.page-unit-bottle
+							img(src="img/hello-honey-bottle.png" alt="")
 						.info.is-l1
 							.info--circle
 							.info--box
-								.info--box--close
-								.info--photo.is-men: img(src="img/men.svg" alt="")
+								.info--box--close.round-hh
+								.info--photo.is-men.round-hh: img(src="img/karol_jan_2x.png" alt="")
+								.info--text
+									p Легендарны кіраўнік горада Караль Ян Чапскі вядомы сваёй неардынарнасцю і цягай да новага. Пры ім Мінск стаў прасунутым еўрапейскім горадам з тэлефонам, трамваем, электрастанцыяй, броварам.
+									p Яркая дзейнасць Караля Яна Чапскага натхніла нашых півавараў на стварэнне лінейкі піва з асаблівымі смакамі і незвычайнымі спалучэннямі. Таму ў кожным гатунку лінейкі можна адчуць прысмак неардынарнай падзеі з&nbsp;жыцця бізнесмена.
+
+						.page-unit-glass
+							img(src="img/hello-honey-glass-sh.png" alt="")
+						.info.is-l2
+							.info--circle
+							.info--box.is-fw
+								.info--box--close.round-hh
+								.info--text
+									p Падавайце Karol Jan Hello Honey у куфлі пры тэмпературы 8–10°С. Цёмна-бурштынавае піва спалучаецца з усімі відамі сыроў, ад вострых і рэзкіх да мяккіх сметанковых. Цудоўна падыдуць і&nbsp;салаты з агародніны. А па-асабліваму раскрыць смак дапамагаюць чырвонае мяса, а таксама рыбныя стравы міжземнаморскай кухні. 
+									img(src="img/popup-icons_hello-honey_2x.png" alt="")
+
+						.page-unit-newTag
+							img(src="img/new-stamp_2x.png" alt="")
+								
+					.page-unit-content.page-unit-content_hello-honey
+						+content ("hello-honey")
+					
+
+
+				.page-unit.page-unit_blonde
+					.page-unit-gb
+						.page-unit-bottle
+							img(src="img/blonde-bottle.png" alt="")
+						.info.is-l1
+							.info--circle
+							.info--box
+								.info--box--close.round-blonde
+								.info--photo.is-men.round-blonde: img(src="img/karol_jan_2x.png" alt="")
+								.info--text
+									p Легендарны кіраўнік горада Караль Ян Чапскі вядомы сваёй неардынарнасцю і цягай да новага. Пры ім Мінск стаў прасунутым еўрапейскім горадам з тэлефонам, трамваем, электрастанцыяй, броварам.
+									p Яркая дзейнасць Караля Яна Чапскага натхніла нашых півавараў на стварэнне лінейкі піва з асаблівымі смакамі і незвычайнымі спалучэннямі. Таму ў кожным гатунку лінейкі можна адчуць прысмак неардынарнай падзеі з&nbsp;жыцця бізнесмена.
+
+						.page-unit-glass
+							img(src="img/blonde-glass-sh.png" alt="")
+						.info.is-l2
+							.info--circle
+							.info--box.is-fw
+								.info--box--close.round-blonde
+								.info--text
+									p Падавайце Karol Jan Blondе пры тэмпературы 6–8°C у куфлі тыпу «цюльпан». Гатунак спалучаецца з лёгкімі закускамі: куранём, смажанымі каўбаскамі, лістамі салаты, ласосем, паўцвёрдым сырам. Да Karol Jan Blondе гэтаксама падыходзяць дэсерты: абрыкосавы альбо мандарынавы пірог, лімонны тарт з заварным крэмам.
+									img(src="img/popup-icons_blonde_2x.png" alt="")
+								
+					.page-unit-content.page-unit-content_blonde
+						+content ("blonde")
+
+
+
+				.page-unit.page-unit_ruby
+					.page-unit-gb
+						.page-unit-bottle
+							img(src="img/ruby-bottle.png" alt="")
+						.info.is-l1
+							.info--circle
+							.info--box
+								.info--box--close.round-ruby
+								.info--photo.is-men.round-ruby: img(src="img/karol_jan_2x.png" alt="")
 								.info--text
 									p Легендарны кіраўнік горада Караль Ян&nbsp;Чапскі вядомы з&nbsp;таго, што пры ім Мінск стаўся прасунутым еўрапейскім горадам з&nbsp;тэлефонам, трамваем, электрастанцыяй, броварам. Як&nbsp;вядома, Чапскі шмат падарожнічаў ды&nbsp;&laquo;прывозіў&raquo; Еўропу дадому.
 									p Аддаючы належнае аднаму са&nbsp;сваіх заснавальнікаў, &laquo;Аліварыя&raquo; запусціла ў Беларусі прэміяльную лінейку еўрапейскага піва. Нашы півавары, натхніўшыся асобай заснавальніка бровара і лепшым еўрапейскім півам, зварылі два новыя гатункі.
 
-
-								
-				.page-unit-content.page-unit-content_ruby
-					+content ("ruby-tagged")
-					
-
-				.page-unit.page-unit_blonde 
-					.left-side--gradient
-					.page-unit-shadow
-					.left-side--photo.page-unit-photo
-					.page-unit-glass
-
-						img(src="img/left-side--glass.png" alt="")
+						.page-unit-glass
+							img(src="img/ruby-glass-sh.png" alt="")
 						.info.is-l2
 							.info--circle
 							.info--box.is-fw
-								.info--box--close
+								.info--box--close.round-ruby
 								.info--text
-									p Падавайце Karol Jan Blondе пры тэмпературы 6&deg;&nbsp;&mdash; 8&deg;C&nbsp;у&nbsp;куфлі тыпу &laquo;цюльпан&raquo;. Гэты гатунак ідэальна спалучаецца з&nbsp;лёгкімі закускамі: куранём, смажанымі каўбаскамі, лістамі салаты, ласосем, паўцвёрдым сырам. Да&nbsp;Karol Jan Blondе будуць гэтаксама пасаваць дэсерты: лёгкі абрыкосавы альбо мандарынавы пірог, лімонны тарт з&nbsp;заварным крэмам.
-									img(src="img/popup_blonde.jpg" alt="")
-					
+									p Падавайце Karol Jan Ruby у куфлі «шаліс» пры тэмпературы 8–10°С. Фруктовы гатунак спалучаецца з усёй разнастайнасцю сыроў:#[br]ад вострых і рэзкіх да мяккіх сметанковых. Цудоўна падыдуць стравы з рыбы і морапрадуктаў, а таксама салаты з агародніны. Раскрыюць смак i фруктовыя дэсерты на аснове вішні.
+									img(src="img/popup-icons_ruby_2x.png" alt="")
 
-					.page-unit-bottle
-						img(src="img/left-side--beer.png" alt="")
-						.info.is-l1
-							.info--circle
-							.info--box
-								.info--box--close
-								.info--photo.is-men: img(src="img/men.svg" alt="")
-								.info--text
-									p Легендарны кіраўнік горада Караль Ян&nbsp;Чапскі вядомы з&nbsp;таго, што пры ім Мінск стаўся прасунутым еўрапейскім горадам з&nbsp;тэлефонам, трамваем, электрастанцыяй, броварам. Як&nbsp;вядома, Чапскі шмат падарожнічаў ды&nbsp;&laquo;прывозіў&raquo; Еўропу дадому.
-									p Аддаючы належнае аднаму са&nbsp;сваіх заснавальнікаў, &laquo;Аліварыя&raquo; запусціла ў Беларусі прэміяльную лінейку еўрапейскага піва. Нашы півавары, натхніўшыся асобай заснавальніка бровара і лепшым еўрапейскім півам, зварылі два новыя гатункі.
-								
-				.page-unit-content.page-unit-content_blonde
-					+content ("blonde")
-				.page-unit.page-unit_dunkel 
-					.left-side--gradient
-					.page-unit-shadow
-					.right-side--photo.page-unit-photo
-					.page-unit-glass
-						img(src="img/right-side--glass.png" alt="")
-						.info.is-l2
-							.info--circle
-							.info--box.is-fw
-								.info--box--close
-								.info--text
-									p Karol Jan Dunkel трэба падаваць у&nbsp;куфлі формы &laquo;рупар&raquo; пры тэмпературы 8&deg;&nbsp;&mdash; 10&deg;C. Да&nbsp;гэтага гатунку будзе пасаваць сытная ежа вострага смаку: барбекю, закускі са&nbsp;спецыямі, сасіскі, смажанае мяса, мяккія сыры з&nbsp;інтэнсіўным смакам ды&nbsp;водарам. На&nbsp;дэсерт прапануецца гранатавы тарт з&nbsp;грэцкімі арэхамі, грушавы пірог з&nbsp;цукатамі.
-									img(src="img/popup_dunkel.jpg" alt="")
+					.page-unit-content.page-unit-content_ruby
+						+content ("ruby")
 
-					.page-unit-bottle
-						img(src="img/right-side--beer.png" alt="")
-						.info.is-l1
-							.info--circle
-							.info--box
-								.info--box--close
-								.info--photo.is-men: img(src="img/men.svg" alt="")
-								.info--text
-									p Легендарны кіраўнік горада Караль Ян&nbsp;Чапскі вядомы з&nbsp;таго, што пры ім Мінск стаўся прасунутым еўрапейскім горадам з&nbsp;тэлефонам, трамваем, электрастанцыяй, броварам. Як&nbsp;вядома, Чапскі шмат падарожнічаў ды&nbsp;&laquo;прывозіў&raquo; Еўропу дадому.
-									p Аддаючы належнае аднаму са&nbsp;сваіх заснавальнікаў, &laquo;Аліварыя&raquo; запусціла ў Беларусі прэміяльную лінейку еўрапейскага піва. Нашы півавары, натхніўшыся асобай заснавальніка бровара і лепшым еўрапейскім півам, зварылі два новыя гатункі.
-								
-					
-				.page-unit-content.page-unit-content_dunkel
-					+content ("dunkel")
-
-			
-			.visible-xs.visible-sm
-				#RubyBox.xs-box.is-ruby
-					.xs-box--in: +content ('ruby')
-					.xs-box--beer.is-ruby: .xs-box--beer-in: img(src="img/ruby--xs.png" alt="")
-				#BlondeBox.xs-box.is-blonde
-					.xs-box--in: +content ('blonde')
-					.xs-box--beer.is-blonde: img(src="img/blonde--xs.png" alt="")
-
-				#DunkelBox.xs-box.is-dunkel
-					.xs-box--in: +content ('dunkel')
-					.xs-box--beer.is-dunkel: .xs-box--beer-in: img(src="img/dunkel--xs.png" alt="")
 				
 			.warning: .warning--in
-			.unp УНП 100128525, ООО "Пивзавод Оливария
 		+ga

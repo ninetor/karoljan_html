@@ -3,7 +3,7 @@ mixin head (title)
 		meta(charset="utf-8")
 		title= title
 
-		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		meta(name="format-detection" content="telephone=no")
 
 		link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
@@ -15,17 +15,18 @@ mixin head (title)
 
 		link(rel="stylesheet" type="text/css" href="css/style.css")
 
-		script(type="text/javascript" src="js/jquery-1.11.1.min.js")
+		script(src="js/jquery-1.11.1.min.js")
 
-		script(type="text/javascript" src="js/scripts.js")
+		script(src="js/scripts.js")
 
 		block
 
 mixin socials
 	.socials
-		a(href="https://twitter.com/alivaria"): i.icon-twitter
-		a(href="https://facebook.com/Alivaria"): i.icon-facebook
 		a(href="https://vk.com/club_alivaria"): i.icon-vkontakte
+		a(href="https://facebook.com/Alivaria"): i.icon-facebook
+		a(href="https://twitter.com/alivaria"): i.icon-instagram
+		
 
 mixin ga
 	script.

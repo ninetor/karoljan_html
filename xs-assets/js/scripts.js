@@ -55,15 +55,15 @@ $(document).ready(function () {
 	}
 	function switchIntroTitle(){
 		var newActive=$(".intro-slider-unit.active");
-		if(newActive.hasClass("blonde")){
-			$(".intro-slider-title").html("Karol Jan Blond");
+		if(newActive.hasClass("hello-honey")){
+			$(".intro-slider-title").html("Karol Jan Hello Honey!");
+			$(".new-tag").removeClass("active");
+		} else if(newActive.hasClass("blonde")){
+			$(".intro-slider-title").html("Karol Jan Blonde");
 			$(".new-tag").removeClass("active");
 		} else if(newActive.hasClass("ruby")){
 			$(".intro-slider-title").html("Karol Jan Ruby");
 			$(".new-tag").addClass("active");
-		} else if(newActive.hasClass("dunkel")){
-			$(".intro-slider-title").html("Karol Jan Dunkel");
-			$(".new-tag").removeClass("active");
 		}
 	}
 	$(window).on('load resize', function () {
@@ -174,12 +174,12 @@ $(document).ready(function () {
 			if($(this).hasClass("blonde")){
 				console.log("blonde");
 				$.fn.fullpage.moveTo(3, 0);
-			} else if($(this).hasClass("dunkel")){
-				console.log("dunkel");
-				$.fn.fullpage.moveTo(4, 0);
+			} else if($(this).hasClass("hello-honey")){
+				console.log("hello-honey");
+				$.fn.fullpage.moveTo(2, 0);
 			} else if($(this).hasClass("ruby")){
 				console.log("ruby");
-				$.fn.fullpage.moveTo(2, 0);
+				$.fn.fullpage.moveTo(4, 0);
 			}
 		} else{
 			current.removeClass("active");
@@ -212,10 +212,24 @@ $(document).ready(function () {
 		}
 		switchIntroTitle();
 
-		
-			
-		
-		
+	});
+
+
+	$(".greeting-popup").on({
+		click:function(){
+			$(this).removeClass("active");
+		}
+	});
+	$(".greeting-popup-body").on({
+		click:function(e){
+			e.stopPropagation();
+		}
 	})
+	$(".greeting-popup-button").on({
+		click:function(){
+			$(this).parents(".greeting-popup").removeClass("active");
+		}
+	});
+
 
 });
